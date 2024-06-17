@@ -2225,6 +2225,16 @@ $fontColor2: #7f7f7e;
 
 
 
+
+
+
+
+
+
+
+
+
+
 .notification-container{
     padding-bottom: 10rem;
     .notification-wrapper{
@@ -2309,15 +2319,9 @@ $fontColor2: #7f7f7e;
 
 
 
-
-
-
-
-
-
 .notification2-wrapper{
     background-color: #222222;
-    height: 100%;
+    height: 100vh;
     .notification2-parent{
         
         padding-bottom: 1rem;
@@ -2347,9 +2351,133 @@ $fontColor2: #7f7f7e;
     }
 
     .notification-2-wrapper{
+        display: flex;
+        justify-content: center;
         .notification-2-parent{
-            background-color: transparent;
+            // margin: 10rem 2rem;
             .notification-2-child{
+                background-color: #00a4e2;
+                padding: 10rem 19rem;
+                border-radius: 2.5rem;
+                background-image: url(/images/BG-035.png);
+                background-size: cover;
+               }
+            }
+        }
+    }
+
+    .notification-3-wrapper{
+        .notification-3-parent{
+            padding: 4.5rem 2.5rem;
+            .notification-3-head{
+                p{
+                    color: white;
+                    font-size: 2rem;
+                    font-weight: 500;
+                }
+            }
+            .notification-3-content{
+                padding-top: 1rem;
+                p{
+                    color: white;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+
+
+
+// notification2 page css end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.affiliate-status-title-wrapper{
+    padding: 3rem 5rem 1.5rem 5rem;
+    border-bottom: 2.2px solid #313131;
+    .affiliate-status-title-parent{
+        display: flex;
+        justify-content: space-around;
+        .affiliate-status-title-child{
+            p{
+                color: #adadad;
+                font-weight: 500;
+                font-size: 1.6rem;
+            }
+            img{
+                width: 2.3rem;
+            }
+            &:nth-child(1){
+                p{
+                    color: white;
+                }
             }
         }
     }
@@ -2357,60 +2485,47 @@ $fontColor2: #7f7f7e;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.affiliate-wrapper{
+    padding: 3rem;
+        .affiliate-parent{
+            background-color: #1d1d1d;
+            border-radius: 2rem;
+            .affiliate-data-child{
+                padding: 2rem 2rem 0.5rem;
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 2.2px solid #313131;
+                p{
+                    color: white;
+                    font-weight: 500;
+                    font-size: 1.6rem;
+                }
+            }
+            .affiliate-count-child{
+                padding: 2rem;
+                display: flex;
+                justify-content: space-between;
+                .affiliate-team{
+                    p{
+                        color: $buttunFontColor;
+                        font-size: 1.5rem;
+                        &:first-child{
+                            color: white;
+                            font-size: 1.7rem;
+                        }
+                    }
+                }
+                .affiliate-profit{
+                    p{
+                        color: $buttunFontColor;
+                        font-size: 1.5rem;
+                        &:first-child{
+                            text-align: end;
+                            color: white;
+                            font-size: 1.7rem;
+                        }
+                    }
+                }
+            }
+        }
+}

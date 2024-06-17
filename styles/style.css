@@ -1,0 +1,1353 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.mobile-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.mobile-section .mobile-wrapper {
+  width: 750px;
+  height: 100vh;
+  background-color: black;
+  overflow-y: scroll;
+}
+.mobile-section .mobile-wrapper::-webkit-scrollbar {
+  width: 3px;
+  height: 0;
+}
+.mobile-section .mobile-wrapper::-webkit-scrollbar-track {
+  background-color: #d7d7d7;
+}
+.mobile-section .mobile-wrapper::-webkit-scrollbar-thumb {
+  background-color: #a8a8a8;
+  border-radius: 0px;
+}
+.mobile-section .mobile-wrapper::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+.mobile-section .mobile-wrapper .welcome-parent .welcome-child .image {
+  display: flex;
+  justify-content: center;
+}
+.mobile-section .mobile-wrapper .welcome-parent .welcome-child .button {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+.mobile-section .mobile-wrapper .welcome-parent .welcome-child .button a {
+  text-decoration: none;
+}
+.mobile-section .mobile-wrapper .welcome-parent .welcome-child .button a p {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.auth-logo-paner {
+  display: flex;
+  justify-content: center;
+}
+.auth-logo-paner .auth-logo-parent .auth-logo-child {
+  margin-top: 6rem;
+}
+.auth-logo-paner .auth-logo-parent .auth-logo-child .image {
+  height: 220px;
+}
+
+.auth-tab .auth-tab-parent {
+  display: flex;
+  justify-content: center;
+  background-color: #1c1c1d;
+  margin: 5rem 2rem;
+  padding: 1rem;
+  gap: 1rem;
+  border-radius: 1rem;
+}
+.auth-tab .auth-tab-parent .auth-tab-child {
+  flex: 1;
+}
+.auth-tab .auth-tab-parent .auth-tab-child button {
+  padding: 1rem 2rem;
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  width: 100%;
+  font-size: 1.3rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: none;
+  color: #ba8968;
+}
+.auth-tab .auth-tab-parent .auth-tab-child:first-child button {
+  background-color: #ba8968;
+  color: white;
+}
+
+.auth-container .auth-container-parent {
+  background-color: #1c1c1d;
+  margin: 2rem;
+  border-radius: 1.5rem;
+}
+.auth-container .auth-container-parent .auth-container-child {
+  display: flex;
+  padding: 2rem;
+  border-bottom: 2.5px solid #333333;
+}
+.auth-container .auth-container-parent .auth-container-child h1 {
+  color: white;
+  font-weight: 600;
+}
+.auth-container .auth-container-parent .auth-container-child label {
+  color: #ba8968;
+  margin-right: 1rem;
+  font-size: larger;
+}
+.auth-container .auth-container-parent .auth-container-child .forgot-link {
+  color: #ba8968;
+}
+.auth-container .auth-container-parent .auth-container-child input {
+  border: none;
+  background: none;
+  color: white;
+  outline: none;
+  font-size: larger;
+}
+.auth-container .auth-container-parent .auth-container-child .regi-button {
+  width: 100%;
+}
+.auth-container .auth-container-parent .auth-container-child .regi-button button {
+  background: none;
+  background-color: #ba8968;
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 1rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 1.2rem 2rem;
+  width: 100%;
+}
+
+.web-copyright .web-copyright-parent {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.web-copyright .web-copyright-parent .web-copyright-child h3 {
+  color: #929293;
+  font-weight: normal;
+}
+
+.side-bar-parent {
+  margin-top: 5rem;
+  margin-left: 2rem;
+}
+.side-bar-parent .side-bar-child img {
+  width: 47px;
+}
+
+.home-logo-paner .home-logo-parent {
+  display: flex;
+  justify-content: center;
+  margin-top: 7rem;
+}
+.home-logo-paner .home-logo-parent .home-logo-child img {
+  height: 4.5rem;
+}
+
+.video-container-parent {
+  display: flex;
+  justify-content: center;
+  margin-top: 8rem;
+}
+.video-container-parent .video-container-child video {
+  border-radius: 1.5rem;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+}
+.content .content-parent {
+  margin-top: 4rem;
+}
+.content .content-parent .content-child p {
+  color: white;
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+.content .content-parent .content-child:nth-child(2) {
+  margin-top: 2rem;
+}
+.content .content-parent .content-child:nth-child(2) p {
+  color: #7f7f7e;
+  font-size: 2rem;
+  font-weight: 550;
+  text-align: center;
+}
+.content .content-parent .content-child:last-child {
+  margin-top: 2rem;
+  padding: 2rem;
+}
+.content .content-parent .content-child:last-child p {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.ecommerce-container {
+  display: flex;
+  margin-top: 1rem;
+}
+.ecommerce-container .ecommerce-parent {
+  display: flex;
+  justify-content: center;
+  padding: 4rem;
+}
+.ecommerce-container .ecommerce-parent .ecommerce-child .ecommerce-logo-children {
+  display: flex;
+  justify-content: center;
+}
+.ecommerce-container .ecommerce-parent .ecommerce-child .ecommerce-logo-children img {
+  width: 10rem;
+}
+.ecommerce-container .ecommerce-parent .ecommerce-child .ecommerce-title-children p {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.ecommerce-container .ecommerce-parent .ecommerce-child .ecommerce-description-children p {
+  text-align: center;
+  color: #7f7f7e;
+  font-size: 1rem;
+}
+.ecommerce-container .ecommerce-parent .ecommerce-child .ecommerce-select-children {
+  text-align: center;
+  margin-top: 1rem;
+}
+.ecommerce-container .ecommerce-parent .ecommerce-child .ecommerce-select-children button {
+  padding: 0.5rem 2rem;
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  width: 100%;
+  font-size: 1.3rem;
+  font-weight: 500;
+  cursor: pointer;
+  background: none;
+  color: white;
+  background-color: #ba8968;
+}
+.ecommerce-container:last-child {
+  margin-top: -3rem;
+}
+
+.title-sell-products-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.title-sell-products-wrapper .title-sell-products-parent {
+  margin: 3rem;
+}
+.title-sell-products-wrapper .title-sell-products-parent .title-sell-product-child p {
+  color: #ba8968;
+  font-size: 2.8rem;
+  text-align: center;
+  font-weight: bold;
+}
+.title-sell-products-wrapper .title-sell-products-parent .title-sell-description-child {
+  margin-top: 2rem;
+}
+.title-sell-products-wrapper .title-sell-products-parent .title-sell-description-child p {
+  color: #7f7f7e;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.scroll-container {
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+  margin-bottom: 4rem;
+}
+.scroll-container::-webkit-scrollbar {
+  width: 3px;
+  height: 0;
+}
+.scroll-container::-webkit-scrollbar-track {
+  background-color: #d7d7d7;
+}
+.scroll-container::-webkit-scrollbar-thumb {
+  background-color: #a8a8a8;
+  border-radius: 0px;
+}
+.scroll-container::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+.scroll-container img {
+  padding: 10px;
+}
+
+.nav-bar {
+  background-color: #222222;
+  height: 100vh;
+  width: 38rem;
+  overflow-y: scroll;
+}
+.nav-bar::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.nav-bar::-webkit-scrollbar-track {
+  background-color: #d7d7d7;
+}
+.nav-bar::-webkit-scrollbar-thumb {
+  background-color: #a8a8a8;
+  border-radius: 0px;
+}
+.nav-bar::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.close-nav {
+  margin-top: 5rem;
+  margin-left: 2rem;
+}
+.nav-logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+.nav-logo .nav-logo-parent .nav-logo-child img {
+  width: 20rem;
+}
+
+.nav-item .nav-item-parent {
+  margin-top: 4rem;
+}
+.nav-item .nav-item-parent .nav-item-child {
+  border-top: 2.5px solid #323332;
+  padding: 2rem 2rem;
+}
+.nav-item .nav-item-parent .nav-item-child .nav-item-button {
+  display: flex;
+  justify-content: center;
+}
+.nav-item .nav-item-parent .nav-item-child .nav-item-button button {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  cursor: pointer;
+  background: none;
+  color: white;
+  background-color: #ba8968;
+  padding: 1.5rem 9rem;
+}
+.nav-item .nav-item-parent .nav-item-child .nav-item-children {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-item .nav-item-parent .nav-item-child .nav-item-children .nav-item-logo img {
+  width: 70px;
+}
+.nav-item .nav-item-parent .nav-item-child .nav-item-children .nav-item-description p {
+  color: white;
+  text-align: start;
+}
+.nav-item .nav-item-parent .nav-item-child .nav-item-children .nav-item-icon i {
+  color: #ba8968;
+}
+.nav-item .nav-item-parent:last-child {
+  border-bottom: 2.5px solid #323332;
+}
+
+.nav-copyright {
+  margin-top: 5rem;
+}
+.nav-copyright .web-copyright-parent {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.nav-copyright .web-copyright-parent .web-copyright-child h3 {
+  color: #929293;
+  font-weight: normal;
+}
+
+.nav-profile {
+  border-bottom: 2.5px solid #333333;
+}
+.nav-profile .nav-profile-parent {
+  margin-bottom: 1.5rem;
+}
+.nav-profile .nav-profile-parent .nav-profile-picture {
+  display: flex;
+  justify-content: center;
+}
+.nav-profile .nav-profile-parent .nav-profile-picture img {
+  width: 8rem;
+}
+.nav-profile .nav-profile-parent .nav-profile-info {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-profile .nav-profile-parent .nav-profile-info p {
+  margin-right: 1rem;
+  color: white;
+  font-size: 2.3rem;
+}
+.referral {
+  margin-top: 1rem;
+}
+.referral .referral-parent {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+.referral .referral-parent .referral-child p {
+  color: #ba8968;
+  margin-right: 1rem;
+}
+.referral .referral-parent .referral-child i {
+  color: #00a4e2;
+}
+
+.amount-wrapper {
+  margin: 5rem 3rem 0rem 3rem;
+}
+.amount-wrapper .amount-parent {
+  display: flex;
+  justify-content: space-between;
+}
+.amount-wrapper .amount-parent .amount-child .divider {
+  border-left: 3px solid #333333;
+  height: 100%;
+}
+.amount-wrapper .amount-parent .amount-child .amount-balance p {
+  color: white;
+  text-align: center;
+  font-size: 1.6rem;
+}
+.amount-wrapper .amount-parent .amount-child .amount-title P {
+  color: #929293;
+  text-align: center;
+  font-size: larger;
+}
+
+.card-wrapper {
+  margin-top: 1.5rem;
+}
+.card-wrapper .card-parent {
+  display: flex;
+  justify-content: space-evenly;
+}
+.card-wrapper .card-parent .card-child {
+  background-color: #1c1c1d;
+  margin: 1rem;
+  border-radius: 1.5rem;
+}
+.card-wrapper .card-parent .card-child .card-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem;
+  padding-bottom: 1rem;
+}
+.card-wrapper .card-parent .card-child .card-icon img {
+  width: 4rem;
+}
+.card-wrapper .card-parent .card-child .card-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.card-wrapper .card-parent .card-child .card-name p {
+  color: #929293;
+  text-align: center;
+  font-size: large;
+}
+
+.nav-item-description2 {
+  margin-left: 4rem;
+}
+.nav-item-description2 p {
+  color: red;
+}
+
+.popup-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+}
+.popup-container .popup-parent {
+  display: flex;
+  justify-content: center;
+  background-color: #1c1c1d;
+  margin: 3.5rem;
+  border-radius: 1.5rem;
+}
+.popup-container .popup-parent .popup-child {
+  margin: 2rem;
+}
+.popup-container .popup-parent .popup-child .popup-heading-parent {
+  display: flex;
+  justify-content: space-between;
+}
+.popup-container .popup-parent .popup-child .popup-heading-parent .popup-title-child {
+  display: flex;
+  align-items: center;
+}
+.popup-container .popup-parent .popup-child .popup-heading-parent .popup-title-child p {
+  font-size: 35px;
+  color: white;
+  font-weight: 500;
+}
+.popup-container .popup-parent .popup-child .popup-heading-parent .popup-close-btn-child {
+  display: flex;
+  align-items: center;
+}
+.popup-container .popup-parent .popup-child .popup-heading-parent .popup-close-btn-child i {
+  font-size: 35px;
+  color: white;
+}
+.popup-container .popup-parent .popup-child .popup-content-parent {
+  margin: 0rem;
+  color: #7e7f7f;
+}
+.popup-container .popup-parent .popup-child .popup-content-parent .popup-content-child {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.popup-container .popup-parent .popup-child .popup-content-parent .popup-content-child p {
+  font-size: 1.2rem;
+}
+.popup-container .popup-parent .popup-child .popup-content-parent .popup-content-child p span {
+  font-size: 1.5rem;
+}
+
+.popup-content-sub-parent .popup-content-sub-title {
+  margin-top: 1.8rem;
+}
+.popup-content-sub-parent .popup-content-sub-title p {
+  color: white;
+  font-weight: 500;
+  font-size: larger;
+}
+
+.popup-card-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+}
+.popup-card-wrapper .popup-card-parent {
+  margin: 1rem;
+  margin-top: 4rem;
+}
+.popup-card-wrapper .popup-card-parent .popup-card-child {
+  display: flex;
+  justify-content: space-between;
+}
+.popup-card-wrapper .popup-card-parent .popup-card-child .card-logo img {
+  width: 7rem;
+}
+.popup-card-wrapper .popup-card-parent .popup-card-child .card-status button {
+  outline: none;
+  border: 2.2px solid white;
+  background: none;
+  color: #8f8f8f;
+  background-color: transparent;
+  padding: 0rem 1rem 0rem 1rem;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.popup-card-wrapper .popup-card-parent .popup-card-title p {
+  color: white;
+  font-weight: 500;
+  font-size: 1.6rem;
+  margin-top: 0.5rem;
+}
+.popup-card-wrapper .popup-card-parent .popup-card-money p {
+  color: #ba8968;
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+.popup-card-wrapper .popup-card-parent .popup-card-description p {
+  color: #8f8f8f;
+  margin-top: 1rem;
+}
+
+.title-parent .title-child {
+  margin: 1rem;
+  margin-left: 2rem;
+}
+.title-parent .title-child p {
+  color: white;
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+.level-tab-wrapper {
+  margin: 1rem 2rem;
+}
+.level-tab-wrapper .tab-parent {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 0.7rem 2rem;
+  background-color: #131213;
+  border-radius: 2rem;
+}
+.level-tab-wrapper .tab-parent .tab-description-child {
+  display: flex;
+  align-items: center;
+}
+.level-tab-wrapper .tab-parent .tab-description-child .tab-logo {
+  margin-right: 1rem;
+}
+.level-tab-wrapper .tab-parent .tab-description-child .tab-logo img {
+  width: 3.5rem;
+}
+.level-tab-wrapper .tab-parent .tab-description-child .tab-title p {
+  font-size: 1.3rem;
+}
+.level-tab-wrapper .tab-parent .tab-level-child {
+  display: flex;
+  align-items: center;
+}
+.level-tab-wrapper .tab-parent .tab-level-child .tab-level p {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.nav-products-wrapper {
+  margin: 3rem 2rem;
+}
+.nav-products-wrapper .nav-products-parent {
+  display: flex;
+  justify-content: space-evenly;
+}
+.nav-products-wrapper .nav-products-parent .nav-product-child p {
+  color: #828383;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.nav-products-wrapper .nav-products-parent .nav-product-child:first-child p {
+  color: #ba8968;
+  text-decoration: underline;
+}
+
+.product-fashion-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 0rem 2.5rem;
+}
+.product-fashion-wrapper .product-fashion-parent {
+  margin-bottom: 1rem;
+}
+.product-fashion-wrapper .product-fashion-parent .product-fashion-child {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.product-fashion-wrapper .product-fashion-parent .product-fashion-child img {
+  width: 17rem;
+}
+.product-fashion-wrapper .product-fashion-parent .product-fashion-child p {
+  color: #828383;
+  font-size: 1.4rem;
+  margin: 0rem 8rem;
+  text-align: center;
+}
+.product-fashion-wrapper .product-fashion-parent .product-fashion-child button {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  cursor: pointer;
+  background: none;
+  color: white;
+  background-color: #ba8968;
+  padding: 1.5rem 9rem;
+}
+.product-fashion-wrapper .product-fashion-parent .product-fashion-child:nth-child(2) p {
+  color: white;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.product-card-container {
+  background-color: #1c1c1d;
+  border-radius: 2.5rem;
+  margin: 2rem 2.5rem;
+}
+.product-card-container .product-card-wrapper {
+  padding-bottom: 2rem;
+}
+.product-card-container .product-card-wrapper .product-card-parent {
+  display: flex;
+  justify-content: space-around;
+}
+.product-card-container .product-card-wrapper .product-card-parent .product-card-child .product-card-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem;
+  padding-bottom: 1rem;
+}
+.product-card-container .product-card-wrapper .product-card-parent .product-card-child .product-card-icon img {
+  width: 5rem;
+}
+.product-card-container .product-card-wrapper .product-card-parent .product-card-child .product-card-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product-card-container .product-card-wrapper .product-card-parent .product-card-child .product-card-name p {
+  color: #ba8968;
+  text-align: center;
+  font-size: 1.3rem;
+}
+.product-card-container .product-card-wrapper .product-card-parent .product-card-child .product-card-money {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product-card-container .product-card-wrapper .product-card-parent .product-card-child .product-card-money p {
+  color: white;
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.product-note-wrapper {
+  margin: 2.5rem;
+}
+.product-note-wrapper .product-note-parent .product-note-child p {
+  color: white;
+  font-size: 1.5rem;
+}
+.product-note-wrapper .product-note-parent .product-note-child li {
+  color: #575657;
+  font-size: 1rem;
+}
+
+.purchased-product-wrapper {
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin: 0rem 2.5rem;
+  margin-top: 8rem;
+}
+.purchased-product-wrapper .purchased-product-parent {
+  padding: 2.5rem;
+  background-color: #060606;
+  border-radius: 1.5rem;
+}
+.purchased-product-wrapper .purchased-product-parent .product-img-child {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+}
+.purchased-product-wrapper .purchased-product-parent .product-img-child img {
+  width: 12rem;
+  background-color: white;
+  border-radius: 50%;
+  padding: 1rem;
+}
+.purchased-product-wrapper .purchased-product-parent .product-title-child {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.purchased-product-wrapper .purchased-product-parent .product-title-child p {
+  font-size: 1.5rem;
+}
+.purchased-product-wrapper .purchased-product-parent .product-description-child {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.purchased-product-wrapper .purchased-product-parent .product-description-child p {
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+.purchased-product-wrapper .purchased-product-parent .product-account-child {
+  display: flex;
+  justify-content: space-between;
+  margin: 0rem 4rem;
+  margin-bottom: 2rem;
+}
+.purchased-product-wrapper .purchased-product-parent .product-account-child .product-account .divider {
+  border-left: 3px solid #333333;
+  height: 100%;
+}
+.purchased-product-wrapper .purchased-product-parent .product-account-child .product-account p {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #ba8968;
+}
+.purchased-product-wrapper .purchased-product-parent .product-info-child {
+  margin-bottom: 2rem;
+}
+.purchased-product-wrapper .purchased-product-parent .product-info-child .info {
+  display: flex;
+  justify-content: space-between;
+}
+.purchased-product-wrapper .purchased-product-parent .product-info-child .info p {
+  font-size: 1.6rem;
+  color: #ba8968;
+  margin: 0.8rem;
+}
+.purchased-product-wrapper .purchased-product-parent .product-btn-child {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.purchased-product-wrapper .purchased-product-parent .product-btn-child button {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  cursor: pointer;
+  background: none;
+  color: white;
+  background-color: #ba8968;
+  padding: 1.5rem 9rem;
+}
+
+.popup-review-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+}
+.popup-review-container .popup-review-parent {
+  display: flex;
+  justify-content: center;
+  background-color: #1c1c1d;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+.popup-review-container .popup-review-parent .popup-review-child .popup-review-heading-parent {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+}
+.popup-review-container .popup-review-parent .popup-review-child .popup-review-heading-parent .popup-review-title-child {
+  display: flex;
+  align-items: center;
+}
+.popup-review-container .popup-review-parent .popup-review-child .popup-review-heading-parent .popup-review-title-child p {
+  font-size: 35px;
+  color: white;
+  font-weight: 500;
+}
+.popup-review-container .popup-review-parent .popup-review-child .popup-review-heading-parent .popup-review-close-btn-child {
+  display: flex;
+  align-items: center;
+}
+.popup-review-container .popup-review-parent .popup-review-child .popup-review-heading-parent .popup-review-close-btn-child i {
+  font-size: 35px;
+  color: white;
+}
+.popup-review-container .popup-review-parent .popup-review-child .popup-review-content-parent {
+  color: #7e7f7f;
+}
+.popup-review-container .popup-review-parent .popup-review-child .popup-review-content-parent .popup-review-content-child {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.popup-review-container .popup-review-parent .popup-review-child .popup-review-content-parent .popup-review-content-child p {
+  font-size: 1.2rem;
+  border-top: 2.2px solid #313131;
+  padding: 1rem;
+}
+.popup-review-container .popup-review-parent .popup-review-child .popup-review-content-parent .popup-review-content-child:last-child {
+  border-bottom: 2.2px solid #313131;
+}
+
+.records-top-head-wrapper .records-top-head-parent {
+  background-color: #222222;
+  padding-bottom: 1rem;
+}
+.records-top-head-wrapper .records-top-head-parent .records-top-head-child .records-sidebar-sub-child .records-sidebar-parent {
+  padding-top: 5rem;
+  padding-left: 2rem;
+}
+.records-top-head-wrapper .records-top-head-parent .records-top-head-child .records-sidebar-sub-child .records-sidebar-parent .records-sidebar-child img {
+  width: 47px;
+}
+.records-top-head-wrapper .records-top-head-parent .records-top-head-child .records-title-sub-child p {
+  color: white;
+  font-weight: 500;
+  font-size: 3.1rem;
+  padding-left: 2rem;
+  padding-top: 1rem;
+}
+.records-top-head-wrapper .records-top-head-parent .records-top-head-child .records-title2-sub-child p {
+  color: #858585;
+  font-size: 1.5rem;
+  padding-left: 2rem;
+  padding-top: 1rem;
+}
+
+.products-status-title-wrapper {
+  padding: 3rem 5rem 1.5rem 5rem;
+  border-bottom: 2.2px solid #313131;
+}
+.products-status-title-wrapper .product-status-title-parent {
+  display: flex;
+  justify-content: space-around;
+}
+.products-status-title-wrapper .product-status-title-parent .product-status-title-child p {
+  color: white;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+.products-status-title-wrapper .product-status-title-parent .product-status-title-child:nth-child(2) p {
+  text-decoration: underline;
+}
+
+.product-description-wrapper {
+  color: white;
+  margin: 2.5rem;
+}
+.product-description-wrapper .product-description-parent .product-status-child {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.product-description-wrapper .product-description-parent .product-status-child p {
+  color: #ba8968;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+.product-description-wrapper .product-description-parent .product-status-child button {
+  outline: none;
+  border: 2.2px solid #9a88a5;
+  background: none;
+  color: #8f8f8f;
+  background-color: transparent;
+  padding: 0rem 1rem 0rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.product-description-wrapper .product-description-parent .product-description-child {
+  background-color: #1d1d1d;
+  border-radius: 1.5rem;
+}
+.product-description-wrapper .product-description-parent .product-description-child .product-description {
+  display: flex;
+  padding: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2.2px solid #313131;
+}
+.product-description-wrapper .product-description-parent .product-description-child .product-description img {
+  width: 6rem;
+  background-color: white;
+  border-radius: 1rem;
+}
+.product-description-wrapper .product-description-parent .product-description-child .product-description p {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 10rem;
+  font-size: 1.2rem;
+}
+.product-description-wrapper .product-description-parent .product-description-child .product-account-detaile {
+  display: flex;
+  padding: 1.4rem;
+  padding-top: 0rem;
+}
+.product-description-wrapper .product-description-parent .product-description-child .product-account-detaile .product-amount p {
+  color: #ba8968;
+  margin: 0.5rem;
+  font-size: 1.3rem;
+}
+.product-description-wrapper .product-description-parent .product-description-child .product-account-detaile .product-profit p {
+  color: #ba8968;
+  margin: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.chat-logo-paner {
+  padding-bottom: 7rem;
+}
+.chat-logo-paner .chat-logo-parent {
+  display: flex;
+  justify-content: center;
+  margin-top: 7rem;
+}
+.chat-logo-paner .chat-logo-parent .chat-logo-child img {
+  height: 12rem;
+}
+
+.whatsapp-tab-wrapper {
+  display: flex;
+  justify-content: center;
+  background-color: #222323;
+  padding: 5rem;
+}
+.whatsapp-tab-wrapper .whatsapp-tab-parent .whatsapp-tab-child p {
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.whatsapp-tab-wrapper .whatsapp-tab-parent .whatsapp-tab-child p:nth-child(2), .whatsapp-tab-wrapper .whatsapp-tab-parent .whatsapp-tab-child p:nth-child(3) {
+  color: #6b6b6b;
+  font-size: 1.2rem;
+}
+.whatsapp-tab-wrapper .whatsapp-tab-parent .whatsapp-tab-child p:nth-child(1) {
+  margin: 2rem;
+}
+.whatsapp-tab-wrapper .whatsapp-tab-parent .whatsapp-tab-child button {
+  margin: 1rem;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  cursor: pointer;
+  background: none;
+  color: white;
+  background-color: #ba8968;
+  padding: 1.5rem 9rem;
+}
+
+.copy-write {
+  background-color: #222323;
+  height: 100vh;
+  padding-top: 10rem;
+}
+.copy-write .web-copyright .web-copyright-parent {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.copy-write .web-copyright .web-copyright-parent .web-copyright-child h3 {
+  color: #929293;
+  font-weight: normal;
+}
+
+.withdraw-bar-parent {
+  margin: 5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.withdraw-bar-parent .withdraw-bar-child img {
+  width: 47px;
+}
+.withdraw-bar-parent .withdraw-bar-title {
+  display: flex;
+  align-items: center;
+}
+.withdraw-bar-parent .withdraw-bar-title p {
+  color: white;
+  font-size: 1.7rem;
+  font-weight: 500;
+  padding-right: 1rem;
+}
+.withdraw-bar-parent .withdraw-bar-title i {
+  color: #7e7f7f;
+  font-size: 1.7rem;
+}
+
+.withdraw-top-head-wrapper .withdraw-top-head-parent {
+  padding-bottom: 1rem;
+}
+.withdraw-top-head-wrapper .withdraw-top-head-parent .withdraw-top-head-child .withdraw-title-sub-child p {
+  color: white;
+  font-weight: 500;
+  font-size: 3.1rem;
+  padding-left: 2rem;
+  padding-top: 1rem;
+}
+.withdraw-top-head-wrapper .withdraw-top-head-parent .withdraw-top-head-child .withdraw-title2-sub-child p {
+  color: #858585;
+  font-size: 1rem;
+  padding-left: 2rem;
+  padding-top: 1rem;
+}
+
+.withdraw-account-wrapper {
+  padding: 1.5rem 2.2rem 1.5rem 2.2rem;
+}
+.withdraw-account-wrapper .withdraw-account-parent .withdraw-wallet-child {
+  padding-bottom: 3rem;
+}
+.withdraw-account-wrapper .withdraw-account-parent .withdraw-wallet-child p {
+  color: #858585;
+  font-size: 1.3rem;
+}
+.withdraw-account-wrapper .withdraw-account-parent .withdraw-wallet-child p:first-child {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.withdraw-account-wrapper .withdraw-account-parent .withdraw-account-child p {
+  color: #858585;
+  font-size: 1.3rem;
+}
+.withdraw-account-wrapper .withdraw-account-parent .withdraw-account-child p:first-child {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.withdraw-amount-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10rem;
+}
+.withdraw-amount-wrapper .withdraw-amount-parent {
+  width: 100%;
+}
+.withdraw-amount-wrapper .withdraw-amount-parent .withdraw-amount-child {
+  padding: 2rem;
+}
+.withdraw-amount-wrapper .withdraw-amount-parent .withdraw-amount-child .withdraw-amount-title {
+  padding-bottom: 1rem;
+}
+.withdraw-amount-wrapper .withdraw-amount-parent .withdraw-amount-child .withdraw-amount-title P {
+  font-size: 1.3rem;
+  color: #ba8968;
+  padding-left: 1rem;
+}
+.withdraw-amount-wrapper .withdraw-amount-parent .withdraw-amount-child .withdraw-amount-input {
+  background-color: #1c1d1c;
+  display: flex;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.withdraw-amount-wrapper .withdraw-amount-parent .withdraw-amount-child .withdraw-amount-input input {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  outline: none;
+  color: white;
+}
+.withdraw-amount-wrapper .withdraw-amount-parent .withdraw-amount-child .withdraw-amount-input p {
+  font-size: 1.5rem;
+  color: white;
+}
+.withdraw-amount-wrapper .withdraw-amount-parent .withdraw-amount-child button {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  cursor: pointer;
+  background: none;
+  color: white;
+  background-color: #ba8968;
+  padding: 1.5rem 9rem;
+}
+.withdraw-amount-wrapper .withdraw-amount-parent .withdraw-amount-child:last-child {
+  padding: 2rem 10rem;
+}
+
+.wh-description-wrapper {
+  padding-bottom: 15rem;
+}
+.wh-description-wrapper .wh-description-parent {
+  border-top: 2.5px solid #323332;
+  padding: 2rem;
+}
+.wh-description-wrapper .wh-description-parent .wh-status-child {
+  padding-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.wh-description-wrapper .wh-description-parent .wh-status-child p {
+  color: white;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+.wh-description-wrapper .wh-description-parent .wh-status-child button {
+  outline: none;
+  border: 2.2px solid #02aa5b;
+  color: #02aa5b;
+  background: none;
+  background-color: transparent;
+  padding: 0rem 1rem 0rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.wh-description-wrapper .wh-description-parent .wh-bank-child {
+  padding-bottom: 0.5rem;
+}
+.wh-description-wrapper .wh-description-parent .wh-bank-child p {
+  color: #8f8f8f;
+  font-size: 1.4rem;
+}
+.wh-description-wrapper .wh-description-parent .wh-money-child {
+  padding-bottom: 0.5rem;
+}
+.wh-description-wrapper .wh-description-parent .wh-money-child p {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.wh-description-wrapper .wh-description-parent:last-child {
+  border-bottom: 2.5px solid #323332;
+}
+
+.invitation-head-title {
+  margin-top: 2rem;
+}
+.invitation-head-title .invitation-head-title-parent {
+  padding-left: 2rem;
+}
+.invitation-head-title .invitation-head-title-parent .invitation-head-title-child p {
+  color: white;
+  font-weight: 500;
+  font-size: 3.5rem;
+}
+
+.invitation-tab-wrapper {
+  padding-bottom: 10rem;
+}
+.invitation-tab-wrapper .invitation-tab-parent .invitation-tab-child {
+  display: flex;
+  justify-content: center;
+}
+.invitation-tab-wrapper .invitation-tab-parent .invitation-tab-child .invitation-qr {
+  padding-bottom: 1.5rem;
+}
+.invitation-tab-wrapper .invitation-tab-parent .invitation-tab-child .invitation-qr img {
+  background-color: white;
+  width: 13rem;
+  border: 1rem solid rgb(72, 72, 72);
+  border-radius: 1rem;
+}
+.invitation-tab-wrapper .invitation-tab-parent .invitation-tab-child .invitation-title {
+  padding-bottom: 0.3rem;
+}
+.invitation-tab-wrapper .invitation-tab-parent .invitation-tab-child .invitation-title p {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.invitation-tab-wrapper .invitation-tab-parent .invitation-tab-child .invitation-code {
+  padding-bottom: 2rem;
+}
+.invitation-tab-wrapper .invitation-tab-parent .invitation-tab-child .invitation-code p {
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+.invitation-tab-wrapper .invitation-tab-parent .invitation-tab-child .invitation-btn {
+  padding-bottom: 1rem;
+}
+.invitation-tab-wrapper .invitation-tab-parent .invitation-tab-child .invitation-btn button {
+  margin: 1rem;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  cursor: pointer;
+  background: none;
+  color: white;
+  background-color: #ba8968;
+  padding: 1.5rem 5rem;
+}
+
+.notification-container {
+  padding-bottom: 10rem;
+}
+.notification-container .notification-wrapper {
+  padding: 1rem 2rem;
+}
+.notification-container .notification-wrapper .notification-parent {
+  background-color: #1d1d1d;
+  border-radius: 1.7rem;
+  padding: 1rem;
+}
+.notification-container .notification-wrapper .notification-parent .notification-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.notification-container .notification-wrapper .notification-parent .notification-child .notification-title {
+  padding: 1rem;
+  padding-right: 2rem;
+}
+.notification-container .notification-wrapper .notification-parent .notification-child .notification-title p {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.notification-container .notification-wrapper .notification-parent .notification-child .notification-title p:last-child {
+  padding-top: 1rem;
+  color: #7c7d7d;
+}
+.notification-container .notification-wrapper .notification-parent .notification-child .notification-arrow {
+  padding-right: 1rem;
+}
+.notification-container .notification-wrapper .notification-parent .notification-child .notification-arrow i {
+  color: white;
+}
+
+.notification2-wrapper {
+  background-color: #222222;
+  height: 100%;
+}
+.notification2-wrapper .notification2-parent {
+  padding-bottom: 1rem;
+}
+.notification2-wrapper .notification2-parent .notification2-child .notification2-sidebar-sub-child .notification2-sidebar-parent {
+  padding-top: 5rem;
+  padding-left: 2rem;
+}
+.notification2-wrapper .notification2-parent .notification2-child .notification2-sidebar-sub-child .notification2-sidebar-parent .notification2-sidebar-child img {
+  width: 47px;
+}
+.notification2-wrapper .notification2-parent .notification2-child .notification2-title-sub-child p {
+  color: white;
+  font-weight: 500;
+  font-size: 3.1rem;
+  padding-left: 2rem;
+  padding-top: 1rem;
+}
+.notification2-wrapper .notification-2-wrapper .notification-2-parent {
+  background-color: transparent;
+}/*# sourceMappingURL=style.css.map */

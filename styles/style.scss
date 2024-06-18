@@ -38,34 +38,58 @@
         height: 100vh;
         background-color: black;
         overflow-y: scroll;
+    }
+}
 
 
-        .welcome-parent {
-            .welcome-child {
-                .image {
-                    display: flex;
-                    justify-content: center;
-                }
 
-                .button {
-                    display: flex;
-                    justify-content: end;
-                    align-items: end;
 
-                    a {
-                        text-decoration: none;
 
-                        p {
-                            color: white;
-                            font-size: 25px;
-                            font-weight: bold;
-                        }
+$buttonBgColor: #ba8968;
+$authTabBgColor: #1c1c1d;
+$buttunFontColor: #ba8968;
+$bgColor2: #333333;
+$fontColor: #929293;
+
+
+
+
+
+
+
+
+
+.welcome-wrapper{
+    display: flex;
+    justify-content: center;
+    .welcome-parent{
+       padding-top: 50%;
+        .welcome-child{
+            img{
+                width: 25rem;
+            }
+            a{
+                text-decoration: none;
+                p{
+                    color: white;
+                    font-size: 1.3rem;
+                    i{
+    
                     }
                 }
+            }
+            &:last-child{
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                height: 30rem;
             }
         }
     }
 }
+
+
+
 
 // welcome page end
 
@@ -87,14 +111,6 @@
 
 
 
-
-$buttonBgColor: #ba8968;
-$authTabBgColor: #1c1c1d;
-$buttunFontColor: #ba8968;
-$bgColor2: #333333;
-$fontColor: #929293;
-
-
 .auth-logo-paner {
     display: flex;
     justify-content: center;
@@ -113,7 +129,7 @@ $fontColor: #929293;
 
 .auth-tab {
 
-    .auth-tab-parent {
+    .auth-tab-parent-login{
         display: flex;
         justify-content: center;
         background-color: $authTabBgColor;
@@ -136,10 +152,66 @@ $fontColor: #929293;
                 cursor: pointer;
                 background: none;
                 color: #ba8968;
-
+            }
+            button:hover{
+                padding: 1rem 2rem;
+                outline: none;
+                border: none;
+                border-radius: 1rem;
+                width: 100%;
+                font-size: 1.3rem;
+                font-weight: 600;
+                cursor: pointer;
+                background-color: $buttonBgColor;
+                color: white;
             }
 
             &:first-child {
+                button {
+                    background-color: $buttonBgColor;
+                    color: white;
+                }
+            }
+        }
+    }
+    .auth-tab-parent-register{
+        display: flex;
+        justify-content: center;
+        background-color: $authTabBgColor;
+        margin: 5rem 2rem;
+        padding: 1rem;
+        gap: 1rem;
+        border-radius: 1rem;
+
+        .auth-tab-child {
+            flex: 1;
+
+            button {
+                padding: 1rem 2rem;
+                outline: none;
+                border: none;
+                border-radius: 1rem;
+                width: 100%;
+                font-size: 1.3rem;
+                font-weight: 600;
+                cursor: pointer;
+                background: none;
+                color: #ba8968;
+            }
+            button:hover{
+                padding: 1rem 2rem;
+                outline: none;
+                border: none;
+                border-radius: 1rem;
+                width: 100%;
+                font-size: 1.3rem;
+                font-weight: 600;
+                cursor: pointer;
+                background-color: $buttonBgColor;
+                color: white;
+            }
+
+            &:last-child {
                 button {
                     background-color: $buttonBgColor;
                     color: white;
@@ -189,7 +261,6 @@ $fontColor: #929293;
                 width: 100%;
 
                 button {
-                    background: none;
                     background-color: $buttonBgColor;
                     color: white;
                     outline: none;
@@ -268,6 +339,8 @@ $fontColor2: #7f7f7e;
         margin-top: 7rem;
 
         .home-logo-child {
+            display: flex;
+            justify-content: center;
             img {
                 height: 4.5rem;
             }
@@ -282,6 +355,8 @@ $fontColor2: #7f7f7e;
     margin-top: 8rem;
 
     .video-container-child {
+        display: flex;
+        justify-content: center;
         video {
             border-radius: 1.5rem;
         }
@@ -928,19 +1003,23 @@ $fontColor2: #7f7f7e;
     display: flex;
     justify-content: space-evenly;
     margin-top: 1rem;
+
     .popup-card-parent {
         margin: 1rem;
         margin-top: 4rem;
+
         .popup-card-child {
             display: flex;
             justify-content: space-between;
+
             .card-logo {
                 img {
                     width: 7rem;
                 }
             }
+
             .card-status {
-                button{
+                button {
                     outline: none;
                     border: 2.2px solid white;
                     background: none;
@@ -953,8 +1032,9 @@ $fontColor2: #7f7f7e;
                 }
             }
         }
+
         .popup-card-title {
-            p{
+            p {
                 color: white;
                 font-weight: 500;
                 font-size: 1.6rem;
@@ -963,7 +1043,7 @@ $fontColor2: #7f7f7e;
         }
 
         .popup-card-money {
-            p{
+            p {
                 color: $buttunFontColor;
                 font-weight: 500;
                 font-size: 1.2rem;
@@ -972,7 +1052,7 @@ $fontColor2: #7f7f7e;
         }
 
         .popup-card-description {
-            p{
+            p {
                 color: #8f8f8f;
                 margin-top: 1rem;
             }
@@ -1019,11 +1099,12 @@ $fontColor2: #7f7f7e;
 
 
 
-.title-parent{
-    .title-child{
+.title-parent {
+    .title-child {
         margin: 1rem;
         margin-left: 2rem;
-        p{
+
+        p {
             color: white;
             font-weight: 500;
             font-size: 3rem;
@@ -1033,35 +1114,42 @@ $fontColor2: #7f7f7e;
 
 
 
-.level-tab-wrapper{
+.level-tab-wrapper {
     margin: 1rem 2rem;
-    .tab-parent{
+
+    .tab-parent {
         display: flex;
         justify-content: space-between;
         color: white;
         padding: 0.7rem 2rem;
         background-color: #131213;
         border-radius: 2rem;
-        .tab-description-child{
+
+        .tab-description-child {
             display: flex;
             align-items: center;
-            .tab-logo{
+
+            .tab-logo {
                 margin-right: 1rem;
-                img{
+
+                img {
                     width: 3.5rem;
                 }
             }
-            .tab-title{
-                p{
+
+            .tab-title {
+                p {
                     font-size: 1.3rem;
                 }
             }
         }
-        .tab-level-child{
+
+        .tab-level-child {
             display: flex;
             align-items: center;
-            .tab-level{
-                p{
+
+            .tab-level {
+                p {
                     font-size: 1.5rem;
                     font-weight: 500;
                 }
@@ -1072,19 +1160,22 @@ $fontColor2: #7f7f7e;
 
 
 
-.nav-products-wrapper{
+.nav-products-wrapper {
     margin: 3rem 2rem;
-    .nav-products-parent{
+
+    .nav-products-parent {
         display: flex;
         justify-content: space-evenly;
-        .nav-product-child{
-            p{
+
+        .nav-product-child {
+            p {
                 color: #828383;
                 font-size: 1.4rem;
                 font-weight: 500;
             }
-            &:first-child{
-                p{
+
+            &:first-child {
+                p {
                     color: $buttonBgColor;
                     text-decoration: underline;
                 }
@@ -1095,26 +1186,31 @@ $fontColor2: #7f7f7e;
 
 
 
-.product-fashion-wrapper{
+.product-fashion-wrapper {
     display: flex;
     justify-content: center;
     margin: 0rem 2.5rem;
-    .product-fashion-parent{
+
+    .product-fashion-parent {
         margin-bottom: 1rem;
-        .product-fashion-child{
+
+        .product-fashion-child {
             display: flex;
             justify-content: center;
             margin-top: 2rem;
-            img{
+
+            img {
                 width: 17rem;
             }
-            p{
+
+            p {
                 color: #828383;
                 font-size: 1.4rem;
                 margin: 0rem 8rem;
                 text-align: center;
             }
-            button{
+
+            button {
                 width: 100%;
                 outline: none;
                 border: none;
@@ -1127,8 +1223,9 @@ $fontColor2: #7f7f7e;
                 background-color: $buttonBgColor;
                 padding: 1.5rem 9rem;
             }
-            &:nth-child(2){
-                p{
+
+            &:nth-child(2) {
+                p {
                     color: white;
                     font-weight: bold;
                     font-size: 2.5rem;
@@ -1139,16 +1236,18 @@ $fontColor2: #7f7f7e;
 }
 
 
-.product-card-container{
+.product-card-container {
     background-color: #1c1c1d;
     border-radius: 2.5rem;
     margin: 2rem 2.5rem;
+
     .product-card-wrapper {
         padding-bottom: 2rem;
+
         .product-card-parent {
             display: flex;
             justify-content: space-around;
-    
+
             .product-card-child {
                 .product-card-icon {
                     display: flex;
@@ -1156,26 +1255,29 @@ $fontColor2: #7f7f7e;
                     align-items: center;
                     padding: 2.5rem;
                     padding-bottom: 1rem;
-    
+
                     img {
                         width: 5rem;
                     }
                 }
-    
+
                 .product-card-name {
                     display: flex;
                     justify-content: center;
                     align-items: center;
+
                     p {
                         color: $buttonBgColor;
                         text-align: center;
                         font-size: 1.3rem;
                     }
                 }
-                .product-card-money{
+
+                .product-card-money {
                     display: flex;
                     justify-content: center;
                     align-items: center;
+
                     p {
                         color: white;
                         text-align: center;
@@ -1190,15 +1292,17 @@ $fontColor2: #7f7f7e;
 
 
 
-.product-note-wrapper{
+.product-note-wrapper {
     margin: 2.5rem;
-    .product-note-parent{
-        .product-note-child{
-            p{
+
+    .product-note-parent {
+        .product-note-child {
+            p {
                 color: white;
                 font-size: 1.5rem;
             }
-            li{
+
+            li {
                 color: #575657;
                 font-size: 1rem;
             }
@@ -1252,80 +1356,95 @@ $fontColor2: #7f7f7e;
 
 
 
-.purchased-product-wrapper{
+.purchased-product-wrapper {
     color: white;
     display: flex;
     justify-content: center;
     margin: 0rem 2.5rem;
     margin-top: 8rem;
-    .purchased-product-parent{
+
+    .purchased-product-parent {
         padding: 2.5rem;
         background-color: #060606;
         border-radius: 1.5rem;
-        .product-img-child{
+
+        .product-img-child {
             margin-bottom: 2rem;
             display: flex;
             justify-content: center;
             border-radius: 50%;
-            img{
+
+            img {
                 width: 12rem;
                 background-color: white;
                 border-radius: 50%;
                 padding: 1rem;
             }
         }
-        .product-title-child{
+
+        .product-title-child {
             margin-bottom: 2rem;
             display: flex;
             justify-content: center;
-            p{
+
+            p {
                 font-size: 1.5rem;
             }
         }
-        .product-description-child{
+
+        .product-description-child {
             margin-bottom: 2rem;
             display: flex;
             justify-content: center;
-            p{
+
+            p {
                 font-size: 2.5rem;
                 font-weight: 500;
                 text-align: center;
             }
         }
-        .product-account-child{
+
+        .product-account-child {
             display: flex;
             justify-content: space-between;
             margin: 0rem 4rem;
             margin-bottom: 2rem;
-            .product-account{
-                    .divider {
-                        border-left: 3px solid $bgColor2;
-                        height: 100%;
-                    }
-                    p{
-                        font-size: 1.2rem;
-                        text-align: center;
-                        color: $buttonBgColor;
-                    }
+
+            .product-account {
+                .divider {
+                    border-left: 3px solid $bgColor2;
+                    height: 100%;
+                }
+
+                p {
+                    font-size: 1.2rem;
+                    text-align: center;
+                    color: $buttonBgColor;
+                }
             }
         }
-        .product-info-child{
+
+        .product-info-child {
             margin-bottom: 2rem;
-            .info{
+
+            .info {
                 display: flex;
                 justify-content: space-between;
-                p{
+
+                p {
                     font-size: 1.6rem;
                     color: $buttonBgColor;
                     margin: 0.8rem;
                 }
             }
         }
-        .product-btn-child{
+
+        .product-btn-child {
             margin-bottom: 2rem;
             display: flex;
             justify-content: center;
-            button{
+
+            button {
                 width: 100%;
                 outline: none;
                 border: none;
@@ -1394,11 +1513,13 @@ $fontColor2: #7f7f7e;
         background-color: #1c1c1d;
         border-top-left-radius: 1.5rem;
         border-top-right-radius: 1.5rem;
+
         .popup-review-child {
             .popup-review-heading-parent {
                 display: flex;
                 justify-content: space-between;
                 margin: 2rem;
+
                 .popup-review-title-child {
                     display: flex;
                     align-items: center;
@@ -1423,15 +1544,18 @@ $fontColor2: #7f7f7e;
 
             .popup-review-content-parent {
                 color: #7e7f7f;
+
                 .popup-review-content-child {
                     margin-top: 1rem;
                     margin-bottom: 1rem;
+
                     p {
                         font-size: 1.2rem;
                         border-top: 2.2px solid #313131;
                         padding: 1rem;
                     }
-                    &:last-child{
+
+                    &:last-child {
                         border-bottom: 2.2px solid #313131;
                     }
                 }
@@ -1481,16 +1605,17 @@ $fontColor2: #7f7f7e;
 
 
 
-.records-top-head-wrapper{
-    .records-top-head-parent{
+.records-top-head-wrapper {
+    .records-top-head-parent {
         background-color: #222222;
         padding-bottom: 1rem;
-        .records-top-head-child{
-            .records-sidebar-sub-child{
+
+        .records-top-head-child {
+            .records-sidebar-sub-child {
                 .records-sidebar-parent {
                     padding-top: 5rem;
                     padding-left: 2rem;
-                
+
                     .records-sidebar-child {
                         img {
                             width: 47px;
@@ -1498,8 +1623,9 @@ $fontColor2: #7f7f7e;
                     }
                 }
             }
-            .records-title-sub-child{
-                p{
+
+            .records-title-sub-child {
+                p {
                     color: white;
                     font-weight: 500;
                     font-size: 3.1rem;
@@ -1507,8 +1633,9 @@ $fontColor2: #7f7f7e;
                     padding-top: 1rem;
                 }
             }
-            .records-title2-sub-child{
-                p{
+
+            .records-title2-sub-child {
+                p {
                     color: #858585;
                     font-size: 1.5rem;
                     padding-left: 2rem;
@@ -1521,20 +1648,23 @@ $fontColor2: #7f7f7e;
 
 
 
-.products-status-title-wrapper{
+.products-status-title-wrapper {
     padding: 3rem 5rem 1.5rem 5rem;
     border-bottom: 2.2px solid #313131;
-    .product-status-title-parent{
+
+    .product-status-title-parent {
         display: flex;
         justify-content: space-around;
-        .product-status-title-child{
-            p{
+
+        .product-status-title-child {
+            p {
                 color: white;
                 font-weight: 400;
                 font-size: 1.6rem;
             }
-            &:nth-child(2){
-                p{
+
+            &:nth-child(2) {
+                p {
                     text-decoration: underline;
                 }
             }
@@ -1543,21 +1673,24 @@ $fontColor2: #7f7f7e;
 }
 
 
-.product-description-wrapper{
+.product-description-wrapper {
     color: white;
     margin: 2.5rem;
-    .product-description-parent{
-        .product-status-child{
+
+    .product-description-parent {
+        .product-status-child {
             display: flex;
             justify-content: space-between;
             padding-top: 1rem;
             padding-bottom: 1rem;
-            p{
+
+            p {
                 color: $buttunFontColor;
                 font-weight: 500;
                 font-size: 1.4rem;
             }
-            button{
+
+            button {
                 outline: none;
                 border: 2.2px solid #9a88a5;
                 background: none;
@@ -1569,20 +1702,24 @@ $fontColor2: #7f7f7e;
                 font-weight: 500;
             }
         }
-        .product-description-child{
+
+        .product-description-child {
             background-color: #1d1d1d;
             border-radius: 1.5rem;
-            .product-description{
+
+            .product-description {
                 display: flex;
                 padding: 2rem;
                 padding-bottom: 1rem;
                 border-bottom: 2.2px solid #313131;
-                img{
+
+                img {
                     width: 6rem;
                     background-color: white;
                     border-radius: 1rem;
                 }
-                p{
+
+                p {
                     display: flex;
                     justify-content: start;
                     align-items: center;
@@ -1591,19 +1728,22 @@ $fontColor2: #7f7f7e;
                     font-size: 1.2rem;
                 }
             }
-            .product-account-detaile{
+
+            .product-account-detaile {
                 display: flex;
                 padding: 1.4rem;
                 padding-top: 0rem;
-                .product-amount{
-                    p{
+
+                .product-amount {
+                    p {
                         color: $buttunFontColor;
                         margin: 0.5rem;
                         font-size: 1.3rem;
                     }
                 }
-                .product-profit{
-                    p{
+
+                .product-profit {
+                    p {
                         color: $buttunFontColor;
                         margin: 0.5rem;
                         font-size: 1.3rem;
@@ -1668,6 +1808,7 @@ $fontColor2: #7f7f7e;
 
 .chat-logo-paner {
     padding-bottom: 7rem;
+
     .chat-logo-parent {
         display: flex;
         justify-content: center;
@@ -1683,27 +1824,32 @@ $fontColor2: #7f7f7e;
 
 
 
-.whatsapp-tab-wrapper{
+.whatsapp-tab-wrapper {
     display: flex;
     justify-content: center;
     background-color: #222323;
     padding: 5rem;
-    .whatsapp-tab-parent{
-        .whatsapp-tab-child{
-            p{
+
+    .whatsapp-tab-parent {
+        .whatsapp-tab-child {
+            p {
                 color: white;
                 text-align: center;
                 font-weight: 500;
                 font-size: 1.5rem;
-                &:nth-child(2),&:nth-child(3){
+
+                &:nth-child(2),
+                &:nth-child(3) {
                     color: #6b6b6b;
                     font-size: 1.2rem;
                 }
-                &:nth-child(1){
+
+                &:nth-child(1) {
                     margin: 2rem;
                 }
             }
-            button{
+
+            button {
                 margin: 1rem;
                 width: 100%;
                 outline: none;
@@ -1717,22 +1863,23 @@ $fontColor2: #7f7f7e;
                 background-color: $buttonBgColor;
                 padding: 1.5rem 9rem;
             }
-            
+
         }
     }
 }
 
 
-.copy-write{
+.copy-write {
     background-color: #222323;
     height: 100vh;
     padding-top: 10rem;
+
     .web-copyright {
         .web-copyright-parent {
             display: flex;
             justify-content: center;
             margin-bottom: 2rem;
-    
+
             .web-copyright-child {
                 h3 {
                     color: $fontColor;
@@ -1804,24 +1951,29 @@ $fontColor2: #7f7f7e;
     margin: 5rem 2rem;
     display: flex;
     justify-content: space-between;
+
     .withdraw-bar-child {
         img {
             width: 47px;
         }
     }
-    .withdraw-bar-title{
+
+    .withdraw-bar-title {
         display: flex;
         align-items: center;
-        p{
-            color: white;
-            font-size: 1.7rem;
-            font-weight: 500;
-            padding-right: 1rem;
+        a{
+            text-decoration: none;
+            p {
+                color: white;
+                font-size: 1.7rem;
+                font-weight: 500;
+                padding-right: 1rem;
+            } 
         }
-        i{
+        i {
             color: #7e7f7f;
             font-size: 1.7rem;
-        }
+        }  
     }
 }
 
@@ -1829,12 +1981,13 @@ $fontColor2: #7f7f7e;
 
 
 
-.withdraw-top-head-wrapper{
-    .withdraw-top-head-parent{
+.withdraw-top-head-wrapper {
+    .withdraw-top-head-parent {
         padding-bottom: 1rem;
-        .withdraw-top-head-child{
-            .withdraw-title-sub-child{
-                p{
+
+        .withdraw-top-head-child {
+            .withdraw-title-sub-child {
+                p {
                     color: white;
                     font-weight: 500;
                     font-size: 3.1rem;
@@ -1842,8 +1995,9 @@ $fontColor2: #7f7f7e;
                     padding-top: 1rem;
                 }
             }
-            .withdraw-title2-sub-child{
-                p{
+
+            .withdraw-title2-sub-child {
+                p {
                     color: #858585;
                     font-size: 1rem;
                     padding-left: 2rem;
@@ -1855,26 +2009,31 @@ $fontColor2: #7f7f7e;
 }
 
 
-.withdraw-account-wrapper{
+.withdraw-account-wrapper {
     padding: 1.5rem 2.2rem 1.5rem 2.2rem;
-    .withdraw-account-parent{
-        .withdraw-wallet-child{
+
+    .withdraw-account-parent {
+        .withdraw-wallet-child {
             padding-bottom: 3rem;
-            p{
+
+            p {
                 color: #858585;
                 font-size: 1.3rem;
-                &:first-child{
+
+                &:first-child {
                     color: white;
                     font-size: 1.5rem;
                     font-weight: 500;
                 }
             }
         }
-        .withdraw-account-child{
-            p{
+
+        .withdraw-account-child {
+            p {
                 color: #858585;
                 font-size: 1.3rem;
-                &:first-child{
+
+                &:first-child {
                     color: white;
                     font-size: 1.5rem;
                     font-weight: 500;
@@ -1885,42 +2044,50 @@ $fontColor2: #7f7f7e;
 }
 
 
-.withdraw-amount-wrapper{
+.withdraw-amount-wrapper {
     display: flex;
     justify-content: center;
     padding-bottom: 10rem;
-    .withdraw-amount-parent{
+
+    .withdraw-amount-parent {
         width: 100%;
-        .withdraw-amount-child{
+
+        .withdraw-amount-child {
             padding: 2rem;
-            .withdraw-amount-title{
+
+            .withdraw-amount-title {
                 padding-bottom: 1rem;
-                P{
+
+                P {
                     font-size: 1.3rem;
                     color: $buttonBgColor;
                     padding-left: 1rem;
                 }
             }
-            .withdraw-amount-input{
+
+            .withdraw-amount-input {
                 background-color: #1c1d1c;
                 display: flex;
                 border-radius: 1rem;
                 padding: 1rem 2rem;
                 display: flex;
                 justify-content: space-between;
-                input{
+
+                input {
                     font-size: 1.5rem;
                     background: none;
                     border: none;
                     outline: none;
                     color: white;
                 }
-                p{
+
+                p {
                     font-size: 1.5rem;
                     color: white;
                 }
             }
-            button{
+
+            button {
                 width: 100%;
                 outline: none;
                 border: none;
@@ -1932,8 +2099,11 @@ $fontColor2: #7f7f7e;
                 color: white;
                 background-color: $buttonBgColor;
                 padding: 1.5rem 9rem;
+                display: flex;
+                justify-content: center;
             }
-            &:last-child{
+
+            &:last-child {
                 padding: 2rem 10rem;
             }
         }
@@ -1998,24 +2168,27 @@ $fontColor2: #7f7f7e;
 
 
 
-.wh-description-wrapper{
+.wh-description-wrapper {
     padding-bottom: 15rem;
-    .wh-description-parent{
+
+    .wh-description-parent {
         border-top: 2.5px solid #323332;
         padding: 2rem;
-        .wh-status-child{
+
+        .wh-status-child {
             padding-bottom: 0.5rem;
             display: flex;
             justify-content: space-between;
-            
-            p{
+
+            p {
                 color: white;
                 font-weight: 500;
                 font-size: 1.4rem;
             }
-            button{
+
+            button {
                 outline: none;
-                border: 2.2px solid #02aa5b; 
+                border: 2.2px solid #02aa5b;
                 color: #02aa5b;
                 background: none;
                 background-color: transparent;
@@ -2025,22 +2198,27 @@ $fontColor2: #7f7f7e;
                 font-weight: 500;
             }
         }
-        .wh-bank-child{
+
+        .wh-bank-child {
             padding-bottom: 0.5rem;
-            p{
+
+            p {
                 color: #8f8f8f;
                 font-size: 1.4rem;
             }
         }
-        .wh-money-child{
+
+        .wh-money-child {
             padding-bottom: 0.5rem;
-            p{
+
+            p {
                 color: white;
                 font-size: 1.5rem;
                 font-weight: 500;
             }
         }
-        &:last-child{
+
+        &:last-child {
             border-bottom: 2.5px solid #323332;
         }
     }
@@ -2105,12 +2283,14 @@ $fontColor2: #7f7f7e;
 
 
 
-.invitation-head-title{
+.invitation-head-title {
     margin-top: 2rem;
-    .invitation-head-title-parent{
+
+    .invitation-head-title-parent {
         padding-left: 2rem;
-        .invitation-head-title-child{
-            p{
+
+        .invitation-head-title-child {
+            p {
                 color: white;
                 font-weight: 500;
                 font-size: 3.5rem;
@@ -2120,42 +2300,50 @@ $fontColor2: #7f7f7e;
 }
 
 
-.invitation-tab-wrapper{
+.invitation-tab-wrapper {
     padding-bottom: 10rem;
-    .invitation-tab-parent{
-        .invitation-tab-child{
+
+    .invitation-tab-parent {
+        .invitation-tab-child {
             display: flex;
             justify-content: center;
-            .invitation-qr{
+
+            .invitation-qr {
                 padding-bottom: 1.5rem;
-               
-                img{
+
+                img {
                     background-color: white;
                     width: 13rem;
                     border: 1rem solid rgb(72, 72, 72);
                     border-radius: 1rem;
                 }
             }
-            .invitation-title{
+
+            .invitation-title {
                 padding-bottom: 0.3rem;
-                p{
+
+                p {
                     color: white;
                     text-align: center;
                     font-size: 1.5rem;
                 }
             }
-            .invitation-code{
+
+            .invitation-code {
                 padding-bottom: 2rem;
-                p{
+
+                p {
                     color: white;
                     text-align: center;
                     font-weight: 500;
                     font-size: 2.5rem;
                 }
             }
-            .invitation-btn{
+
+            .invitation-btn {
                 padding-bottom: 1rem;
-                button{
+
+                button {
                     margin: 1rem;
                     width: 100%;
                     outline: none;
@@ -2235,34 +2423,42 @@ $fontColor2: #7f7f7e;
 
 
 
-.notification-container{
+.notification-container {
     padding-bottom: 10rem;
-    .notification-wrapper{
+
+    .notification-wrapper {
         padding: 1rem 2rem;
-        .notification-parent{
+
+        .notification-parent {
             background-color: #1d1d1d;
             border-radius: 1.7rem;
             padding: 1rem;
-            .notification-child{
+
+            .notification-child {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                .notification-title{
+
+                .notification-title {
                     padding: 1rem;
                     padding-right: 2rem;
-                    p{
+
+                    p {
                         color: white;
                         font-size: 1.4rem;
                         font-weight: 400;
-                        &:last-child{
+
+                        &:last-child {
                             padding-top: 1rem;
                             color: #7c7d7d;
                         }
                     }
-                } 
-                .notification-arrow{
+                }
+
+                .notification-arrow {
                     padding-right: 1rem;
-                    i{
+
+                    i {
                         color: white;
                     }
                 }
@@ -2319,18 +2515,20 @@ $fontColor2: #7f7f7e;
 
 
 
-.notification2-wrapper{
+.notification2-wrapper {
     background-color: #222222;
     height: 100vh;
-    .notification2-parent{
-        
+
+    .notification2-parent {
+
         padding-bottom: 1rem;
-        .notification2-child{
-            .notification2-sidebar-sub-child{
+
+        .notification2-child {
+            .notification2-sidebar-sub-child {
                 .notification2-sidebar-parent {
                     padding-top: 5rem;
                     padding-left: 2rem;
-                
+
                     .notification2-sidebar-child {
                         img {
                             width: 47px;
@@ -2338,8 +2536,9 @@ $fontColor2: #7f7f7e;
                     }
                 }
             }
-            .notification2-title-sub-child{
-                p{
+
+            .notification2-title-sub-child {
+                p {
                     color: white;
                     font-weight: 500;
                     font-size: 3.1rem;
@@ -2350,41 +2549,46 @@ $fontColor2: #7f7f7e;
         }
     }
 
-    .notification-2-wrapper{
+    .notification-2-wrapper {
         display: flex;
         justify-content: center;
-        .notification-2-parent{
+
+        .notification-2-parent {
+
             // margin: 10rem 2rem;
-            .notification-2-child{
+            .notification-2-child {
                 background-color: #00a4e2;
                 padding: 10rem 19rem;
                 border-radius: 2.5rem;
                 background-image: url(/images/BG-035.png);
                 background-size: cover;
-               }
             }
         }
     }
+}
 
-    .notification-3-wrapper{
-        .notification-3-parent{
-            padding: 4.5rem 2.5rem;
-            .notification-3-head{
-                p{
-                    color: white;
-                    font-size: 2rem;
-                    font-weight: 500;
-                }
+.notification-3-wrapper {
+    .notification-3-parent {
+        padding: 4.5rem 2.5rem;
+
+        .notification-3-head {
+            p {
+                color: white;
+                font-size: 2rem;
+                font-weight: 500;
             }
-            .notification-3-content{
-                padding-top: 1rem;
-                p{
-                    color: white;
-                    font-size: 1.3rem;
-                }
+        }
+
+        .notification-3-content {
+            padding-top: 1rem;
+
+            p {
+                color: white;
+                font-size: 1.3rem;
             }
         }
     }
+}
 
 
 
@@ -2459,23 +2663,27 @@ $fontColor2: #7f7f7e;
 
 
 
-.affiliate-status-title-wrapper{
+.affiliate-status-title-wrapper {
     padding: 3rem 5rem 1.5rem 5rem;
     border-bottom: 2.2px solid #313131;
-    .affiliate-status-title-parent{
+
+    .affiliate-status-title-parent {
         display: flex;
         justify-content: space-around;
-        .affiliate-status-title-child{
-            p{
+
+        .affiliate-status-title-child {
+            p {
                 color: #adadad;
                 font-weight: 500;
                 font-size: 1.6rem;
             }
-            img{
+
+            img {
                 width: 2.3rem;
             }
-            &:nth-child(1){
-                p{
+
+            &:nth-child(1) {
+                p {
                     color: white;
                 }
             }
@@ -2485,41 +2693,76 @@ $fontColor2: #7f7f7e;
 
 
 
-.affiliate-wrapper{
-    padding: 3rem;
-        .affiliate-parent{
+.affiliate-wrapper {
+    padding-bottom: 10rem;
+
+    .affiliate-child {
+        padding: 0rem 3rem;
+        padding-top: 3rem;
+
+        .affiliate-parent {
             background-color: #1d1d1d;
             border-radius: 2rem;
-            .affiliate-data-child{
+
+            .affiliate-data-child {
                 padding: 2rem 2rem 0.5rem;
                 display: flex;
                 justify-content: space-between;
                 border-bottom: 2.2px solid #313131;
-                p{
+
+                p {
                     color: white;
                     font-weight: 500;
                     font-size: 1.6rem;
                 }
+
+                .affiliate-sub-data1 {
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        padding-right: 1rem;
+                        width: 4rem;
+                    }
+
+                    p {
+                        padding-right: 1rem;
+
+                        &:last-child {
+                            color: #616161;
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+
+                .affiliate-sub-data2 {
+                    p {}
+                }
             }
-            .affiliate-count-child{
+
+            .affiliate-count-child {
                 padding: 2rem;
                 display: flex;
                 justify-content: space-between;
-                .affiliate-team{
-                    p{
+
+                .affiliate-team {
+                    p {
                         color: $buttunFontColor;
                         font-size: 1.5rem;
-                        &:first-child{
+
+                        &:first-child {
                             color: white;
                             font-size: 1.7rem;
                         }
                     }
                 }
-                .affiliate-profit{
-                    p{
+
+                .affiliate-profit {
+                    p {
                         color: $buttunFontColor;
                         font-size: 1.5rem;
-                        &:first-child{
+
+                        &:first-child {
                             text-align: end;
                             color: white;
                             font-size: 1.7rem;
@@ -2528,4 +2771,372 @@ $fontColor2: #7f7f7e;
                 }
             }
         }
+    }
 }
+
+
+
+// affiliate program page css end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.transactions-wrapper {
+    padding-bottom: 15rem;
+
+    .transactions-parent {
+        .transactions-child {
+            border-bottom: 2.2px solid #313131;
+            padding: 2rem;
+
+            .transactions-sub-child {
+                padding: 0.2rem;
+
+                p {
+                    color: white;
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                }
+
+                &:nth-child(1) {
+                    p {
+                        padding-bottom: 0.5rem;
+                    }
+                }
+
+                &:nth-child(2) {
+                    p {
+                        color: $buttunFontColor;
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// transactions page css end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.link-to-bank-account {
+    p {
+        color: #858585;
+        font-size: 1.4rem;
+        padding-left: 2rem;
+        padding-top: 1rem;
+        margin-right: 9rem;
+    }
+}
+
+
+// link to bank account and security pages css end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.popup-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+
+    .popup-parent {
+        display: flex;
+        justify-content: center;
+        background-color: #1c1c1d;
+        margin: 3.5rem;
+        border-radius: 1.5rem;
+
+        .popup-child {
+            margin: 2rem;
+
+            .popup-heading-parent {
+                display: flex;
+                justify-content: space-between;
+
+                .popup-title-child {
+                    display: flex;
+                    align-items: center;
+
+                    p {
+                        font-size: 35px;
+                        color: white;
+                        font-weight: 500;
+                    }
+                }
+
+                .popup-close-btn-child {
+                    display: flex;
+                    align-items: center;
+
+                    i {
+                        font-size: 35px;
+                        color: white;
+                    }
+                }
+            }
+
+            .popup-content-parent {
+                margin: 0rem;
+                color: #7e7f7f;
+
+                .popup-content-child {
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
+
+                    p {
+                        font-size: 1.2rem;
+
+                        span {
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.calendar-wrapper{
+    .calendar{
+        .calendar-header{
+            display: flex;
+            justify-content: space-between;
+            .pre-year{
+                i{
+
+                }
+            }
+            .month-year-value{
+                display: flex;
+                .month-picker{
+
+                }
+                .year{
+
+                }
+            }
+            .next-year{
+                i{
+
+                }
+            }
+        }
+        .calendar-body{
+            .days{
+                display: grid;
+            }
+            .dates{
+
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// media querys
+
+// html {
+//     font-size: 50%;
+// }   
+
+// .home-logo-paner .home-logo-parent .home-logo-child img {
+//     height: auto;
+//     width: 80%;
+// }
+
+// .video-container-parent .video-container-child video {
+//     height: auto;
+//     width: 90%;
+// }
+
+// .scroll-container img{
+//     height: auto;
+//     width: 80%;
+// }
+
+// .mobile-section .ecommerce-wrapper .ecommerce-parent {
+//     flex-direction: column;
+// }
+
+

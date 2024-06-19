@@ -431,7 +431,7 @@
   align-items: center;
 }
 .nav-item .nav-item-parent .nav-item-child .nav-item-children .nav-item-logo img {
-  width: 70px;
+  width: 5rem;
 }
 .nav-item .nav-item-parent .nav-item-child .nav-item-children .nav-item-description p {
   color: white;
@@ -1618,4 +1618,33 @@
 }
 .calendar-wrapper .calendar .calendar-body .days {
   display: grid;
+}
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 50%;
+  }
+  .home-logo-paner .home-logo-parent .home-logo-child img {
+    height: auto;
+    width: 80%;
+  }
+  .video-container-parent .video-container-child video {
+    height: auto;
+    width: 90%;
+  }
+  .ecommerce-container {
+    flex-direction: column;
+  }
+  .scroll-container img {
+    height: 100%;
+    width: 75%;
+  }
+  .card-wrapper .card-parent .card-child .card-name p {
+    font-size: small;
+  }
+  .popup-card-wrapper {
+    flex-direction: column;
+  }
+  .popup-card-wrapper {
+    margin: 2rem;
+  }
 }/*# sourceMappingURL=style.css.map */
